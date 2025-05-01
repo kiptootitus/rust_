@@ -44,8 +44,11 @@ fn main() {
 
     // for loop. it is used to iterable over a list or array
     let num = [1,2,3,4,5,6,7,8,9];
-
+    let letter = ["a","b","c","d","d"];
     for number in num {
         println!("Itering over num array. Number {number}");
-    }
+    };
+    for alpha in letter {
+        println!("Itering over a list. This is alphabet {alpha}.");
+    };
 }
