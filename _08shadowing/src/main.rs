@@ -1,5 +1,7 @@
-// Shadowing 
-// Shadowing is different from mutability is that mutability uses `mut` which makes the variable reassignable.
+/* 
+Shadowing 
+Shadowing is different from mutability is that mutability uses `mut` which makes the variable reassignable.
+*/
 fn main() {
     // original variable
     let x = 5;
@@ -13,4 +15,15 @@ fn main() {
     }
 
     println!("The value of x is: {x}");
+    // this is shadowing
+    let spaces = "";
+    let spaces = spaces.len();
+
+    println!("The number of spaces legnth is {spaces}");
+
+    // this is mutability which returns error during compiling 
+    let spaces = "   ";
+    spaces = spaces.len(); // this will return error
 }
+
+// Shadowing helps us to reuse names without reassignig the values
