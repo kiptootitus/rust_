@@ -23,7 +23,18 @@ fn main(){
   // let slice: &str = &strng[0..5];
   // println!("This is slice, {}", slice);
   tell_height(192);
-  human_info("Titus", 24, 189.0 )
+  human_info("Titus", 24, 189.0 );
+
+  let _x = {
+    let qnty = 10;
+    let price = 5;
+    qnty * price // this is special to rust you can do mathematical calculations can be done at the end. 
+  };
+  println!("The result is: {}", _x);
+
+  let y = add(5, 5);
+  println!("The output is: {}", y);
+
 }
 
 fn tell_height(height: u32) {
@@ -35,5 +46,10 @@ fn human_info(name: &str, age: u32, height: f32){
   println!("My name is {}. I am {} years old, and my height is {}.cm", name, age, height);
 }
 
+
+// function for returning values
+fn add(a: i32, b:i32) -> i32{
+  a + b
+}
 
 // Expressions and statements
