@@ -28,12 +28,22 @@ fn main(){
   let _x = {
     let qnty = 10;
     let price = 5;
-    qnty * price // this is special to rust you can do mathematical calculations can be done at the end. 
+    qnty * price // this is special to rust you can do mathematical calculations can be done at the end. This is an ex
   };
   println!("The result is: {}", _x);
 
   let y = add(5, 5);
   println!("The output is: {}", y);
+
+  let height = 70.0;
+  let weight = 75.0;
+  let bmi = calc_bmi(height, weight);
+  println!("Your bmi, {}", bmi);
+
+
+
+
+
 
 }
 
@@ -53,3 +63,10 @@ fn add(a: i32, b:i32) -> i32{
 }
 
 // Expressions and statements
+// statements ends with ; almost all statements in Rust
+
+
+// final example
+fn calc_bmi(height_cm: f64, weight_kg:f64) -> f64{
+  height_cm * weight_kg
+}
