@@ -9,6 +9,6 @@ fn main() {
     };
 
     let home = IpAddrKind::V4(String::from("127.0.0.1"));
-    println!("The Ip address kind of 4 is {}", home.V4);
+    println!("The Ip address kind of 4 is", );
 
 }
