@@ -1,7 +1,7 @@
 #! [allow(warnings)]
 
 fn main() {
-    let mut numbers = vec![];
+    let mut numbers =Vec::new();
     numbers.push(1);
     numbers.push(2);
     numbers.push(3);
@@ -13,6 +13,7 @@ fn main() {
 
 
 fn vec_num(){
+    // using macro way of creating a vector
     let mut _v:Vec<i32> = vec![];
     _v.push(20);
     _v.push(21);
@@ -22,7 +23,11 @@ fn vec_num(){
     _v.push(25);
     _v.push(26);
     _v.push(27);
+    let third = _v.get(2);
+    match third {
+        Some(third) => println!("The index from the get method is:  {third}"),
+        None => println!("There is no third element "),
+    }
 
-    println!("The new array _v using vec {:?}", _v);
 
 }
