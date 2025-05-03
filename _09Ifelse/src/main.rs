@@ -26,7 +26,7 @@ fn main() {
     let number = if condition {
         5
     } else { 
-        "six"//Error
+        6 // Fixed to match the integer type
     };
     println!("The number is: {number}");
 

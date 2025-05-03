@@ -7,18 +7,18 @@
 
 
 // // Rule 1: Each value in Rust has an owner.
-// fn main() {
-//     let s1 = String :: from("Hello");
-//     let len = calc_legnth(&s1);
-//     println!("The length of owner is: {} and it is {}", len, s1);
+fn main() {
+    let s1 = String :: from("Hello");
+    let len = calc_legnth(&s1);
+    println!("The length of owner is: {} and it is {}", len, s1);
 
-// }
+}
 
-// fn calc_legnth(s: &String) -> usize{
-//     s.len()
-// }
+fn calc_legnth(s: &String) -> usize{
+    s.len()
+}
 
-// Rule 2: There can only be one owner at a time.
+// // Rule 2: There can only be one owner at a time.
 // fn main() {
 //     let s1 = String::from("Rust");
 //     let s2 = s1;

@@ -23,7 +23,7 @@ fn main() {
 
     // this is mutability which returns error during compiling 
     let spaces = "   ";
-    spaces = spaces.len(); // this will return error
+    let _spaces = spaces.len(); // this will return error
 }
 
 // Shadowing helps us to reuse names without reassignig the values
