@@ -11,10 +11,10 @@ fn main() {
     let hello = String::from("नमस्ते");
     let hello = String::from("こんにちは");
     let hello = String::from("안녕하세요");
-    let hello = String::from("你好");
-    let hello = String::from("Olá");
-    let hello = String::from("Здравствуйте");
-    let hello = String::from("Hola");
+    let chinese = String::from("你好");
+    let mexican = String::from("Olá");
+    let russian = String::from("Здравствуйте");
+    let spanish = String::from("Hola");
 
     // Updating the string by using push_str
     let mut h = String::from("foo");
@@ -34,7 +34,7 @@ fn main() {
     let s2 = String::from(" World");
     let s3 = String::from("!");
 
-    let greeting = format!("{s1}{s2}{s3}");
+    let greeting = format!("{spanish}{s2}{s3}");
 
     println!("The greeting is {greeting}");
 
