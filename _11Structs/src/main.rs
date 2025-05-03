@@ -1,7 +1,8 @@
 #! [allow(warnings)]
 /*
 Structs
-it defines a name with a pieces of data 
+it defines a name with a pieces of data.
+It groups together data that are related into one name eg user
 */
 fn main() {
     struct User {
@@ -20,7 +21,7 @@ fn main() {
         active: false,
 
     };
-    // building struct from a build_user function
+    // building struct from a build_user
     fn build_user(username: String, email: String, phonenumber: u64) -> User {
         User {
         active: true,
