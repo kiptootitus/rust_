@@ -1,0 +1,6 @@
+[package]
+name = "_15collect-utf"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
