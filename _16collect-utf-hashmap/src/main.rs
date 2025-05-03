@@ -1,3 +1,4 @@
+#! [allow(warnings)]
 fn main() {
 use std::collections::HashMap;
 let mut scores = HashMap::new();
@@ -12,3 +13,5 @@ let score = scores.get(&team_name).copied().unwrap_or(0);
 println!("Score for {} is {}", team_name, score);
 
 }
+
+
